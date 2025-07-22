@@ -1,11 +1,12 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Database
-gem 'sqlite3', '~>1.4'
+gem 'sqlite3', '~> 1.6'
 
-# Testing
-gem 'rspec'
+group :development, :test do
+  # Testing
+  gem 'rspec'
 
-# Debugging
-gem 'pry'
+  # Debugging
+  gem 'pry', '>= 0.14.2'
+end
